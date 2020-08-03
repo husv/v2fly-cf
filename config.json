@@ -13,6 +13,9 @@
       },
       "streamSettings": {
         "network":"ws"
+        "wsSettings": {
+            "path": "vi6znBprEeVSrkjh"
+        }
       }
     }
   ],
