@@ -1,28 +1,39 @@
 {
-  "inbounds": [
-    {
-      "port": 8080,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "91dc2f10-6d3e-44b2-802d-51837e81fc4c",
-            "alterId": 0
-          }
-        ]
-      },
-      "streamSettings": {
-        "network":"ws"
-        "wsSettings": {
-            "path": "vi6znBprEeVSrkjh"
+    "inbounds": [
+        {
+            "port": 8080,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "91dc2f10-6d3e-44b2-802d-51837e81fc4c",
+                        "alterId": 4
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network":"ws",
+                "wsSettings": {
+                    "path": "vi6znBprEeVSrkjh"
+                }
+            }
         }
-      }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {}
+        }
+    ],
+    "policy": {
+        "levels": {
+            "0": {
+            "handshake": 5,
+            "connIdle": 60,
+            "uplinkOnly": 0,
+            "downlinkOnly": 0,
+            "bufferSize": 1024
+            }
+        }
     }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
 }
